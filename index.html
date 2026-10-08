@@ -6,36 +6,40 @@
     <meta name="description" content="A portfolio site about D'Antay Hawkins, showcasing multiple projects.">
     <meta name="keywords" content="Portfolio, Game Development, Software Engineering">
     <meta name="author" content="D'Antay Hawkins">
+
     <title>D'Antay's Portfolio</title>
+
     <link rel="icon" type="image/x-icon" href="Images/icon.ico">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+    </style>
 </head>
 <body>
     <header>
-        <a href="#"><img src="Images/logo.png" alt="SirDantay's Logo" width="150"></a>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <search>
-                <form>
-                    <input name="search" placeholder="Search Portfolio">
-                </form>
-            </search>
-        </nav>
+        <a href="#"><img src="Images/logo_transparent.png" id="logo" alt="SirDantay's Logo" width="150"></a>
     </header>
+    <nav class="cover">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
     <main>
         <section>
             <h1>D'Antay's Portfolio</h1>
         </section>
         <section id="about">
             <h2>About</h2>
+            <div id="title-breaker"></div>
             <p>I’m a student/software engineer born and raised in <em>Chicago, IL</em>. I enjoy developing new systems, networks, and mechanics- bringing exciting problems and visions to life. I’m always learning and would love to take on even more interesting challenges. You can find me on any of my contacts below!</p>
         </section>
         <section id="projects">
             <h2>Projects</h2>
-            <article>
+            <div id="title-breaker"></div>
+            <article class="cover">
                 <h3>Volley Guns (<time>2025</time>)</h3>
                 <dl>
                     <dt>Party</dt>
@@ -55,7 +59,7 @@
                 <p>Since then, I've been working with a talented team to bring this interesting game concept to life and expanding it to multiplayer.</p>
                 <p>The game has been fully released! Link to the steam page above!</p>
             </article>
-            <article>
+            <article class="cover">
                 <h3>Ancient Olympics (<time>2025</time>)</h3>
                 <dl>
                     <dt>Party</dt>
@@ -69,7 +73,7 @@
                     <source src="Videos/anicentolympicsloop.mp4" type="video/mp4">
                     Your browser does not support the HTML video tag.
                 </video>
-                <p>Ancient Olympics is a 2-4 player online party game that allows friends to compete in a plethora of minigames. The minigames include Jousting, Assassinations, Javelin Throwing, and Sword Fighting. I wanted to design each game to be quick and engaging, minigames should feel like they happen in rapid succession.</p>
+                <p>Ancient Olympics <br> is a 2-4 player online party game that allows friends to compete in a plethora of minigames. The minigames include Jousting, Assassinations, Javelin Throwing, and Sword Fighting. I wanted to design each game to be quick and engaging, minigames should feel like they happen in rapid succession.</p>
                 <p>This project is fully networked using Unity's Netcode for Gameobjects and Unity services for relay, authentication, etc.</p>
                 <p>The art assets used in this project are all from Kenney assets (kenny.nl), I wanted to ensure that the art was consistent so I only selected pieces from that artist (Also the designs are fantastic!).</p>
                 <p>This project is inspired by party games like <em>Unspottable</em>, <em>Gang Beasts</em>, <em>Mario Party</em>, and others! I suddenly got the urge one day to develop a party game of my own to have fun playing with friends and.. suddenly this was the product!</p>
@@ -77,10 +81,11 @@
         </section>
         <section id="contact">
             <h2>Contact</h2>
+            <div id="title-breaker"></div>
             <address>
                 <p><a href="dantayworks@gmail.com">dantayworks@gmail.com</a></p>
-                <p><a href="https://www.linkedin.com/in/dantayhawkins/">LinkedIn</a></p>
-                <p><a href="https://github.com/JoltenDev">GitHub</a></p>
+                <a href="https://www.linkedin.com/in/dantayhawkins/"><img src="Images/social-linkedin.png" id="logo" alt="LinkedIn Logo" width="35"></a>
+                <a href="https://github.com/JoltenDev"><img src="Images/github.svg" id="logo" alt="GitHub Logo" width="35"></a>
             </address>
         </section>
     </main>

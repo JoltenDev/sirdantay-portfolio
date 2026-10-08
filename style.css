@@ -1,0 +1,138 @@
+:root {
+    --primary-color: #fee0be;
+    --secondary-color: #FED8AE;
+    --tertiary-color: #FECFA6;
+    --default-font-color: #33261D;
+    --tags-font-color: #FD8A38;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--default-font-color);
+
+    margin: 0;
+}
+
+main {
+    background-color: var(--secondary-color);
+}
+
+#logo {
+    transition: transform 0.3s ease;
+}
+
+#logo:hover {
+    transform: scale(0.95); 
+}
+
+#logo:active {
+    transform: scale(0.75); 
+}
+
+header {
+    width: 50%;
+    height: auto;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    align-content: center;
+    text-align: center;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    width: 150px;
+}
+
+nav.cover {
+    background-color: var(--secondary-color);
+    border-color: var(--tertiary-color);
+}
+
+section {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+    align-content: center;
+}
+
+section h1 {
+    font-family: "Dongle", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 4em;
+}
+
+section h2 {
+    font-size: 2em;
+}
+
+#title-breaker {
+    border-top: 2px solid var(--default-font-color);
+    border-radius: 2px;
+    background-color: var(--primary-color);
+    box-shadow: 0 10px 6px rgba(0,0,0,0.05);
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+li {
+    margin-right: 50px;
+}
+
+dt {
+    width: 75px;
+
+    border: 2px solid var(--tags-font-color);
+    border-radius: 8px;
+    
+    padding: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+
+    float: right;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+article video {
+    float: right;
+
+    margin-left: 20px;
+    max-width: 75%;
+    height: auto;
+}
+
+article::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+article.cover {
+    background-color: var(--primary-color);
+    border-color: #ddd;
+}
+
+footer {
+    margin-left: 25px;
+}
+
+.cover {
+    border: 1px solid;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin-bottom: 25px;
+    padding: 15px;
+}
+
+.border {
+  border: 2px solid black;
+}
